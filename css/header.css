@@ -8,3 +8,7 @@
 .header li {
   padding: 10px 20px 10px 20px;
 }
+
+.header li a {
+  text-decoration: none;
+}
