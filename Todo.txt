@@ -1,2 +1,3 @@
 # Create structure with html
--> # Fetch data from JSON file using javascript and display on html projects section
+# Fetch data of data using json.
+-> # Render json data in html
