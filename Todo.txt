@@ -1,1 +1,2 @@
 # Create structure with html
+-> # Fetch data from JSON file using javascript and display on html projects section
