@@ -33,20 +33,20 @@
 }
 
 .projectcardview {
-  box-shadow: 0 3px 5px black;
+  box-shadow: 2px 4px 6px black;
 }
 
 .projectcardview > img {
   padding: 50px 5px;
-  background: #990033;
+  background: #000000;
 }
 
 .projectcardview > p {
-  background-image: linear-gradient(to left, #fafafa, #f5f5f5);
+  background: white;
   color: black;
-  font-size: 25px;
-
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-size: 25px; */
+  font: 30 30px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1), 7px 7px 0px rgba(0, 0, 0, 0.05);
   padding: 10px 0;
 }

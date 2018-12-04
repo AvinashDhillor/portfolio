@@ -1,22 +1,22 @@
 [
   {
     "image": "./projects/images/1.gif",
-    "title": "some title",
+    "title": "Some title",
     "link": "http://www.facebook.com"
   },
   {
     "image": "./projects/images/1.gif",
-    "title": "some title",
+    "title": "Some title",
     "link": "www.facebook.com"
   },
   {
     "image": "./projects/images/1.gif",
-    "title": "some title",
+    "title": "Some title",
     "link": "www.facebook.com"
   },
   {
     "image": "./projects/images/1.gif",
-    "title": "some title",
+    "title": "Some title",
     "link": "www.facebook.com"
   }
 ]
