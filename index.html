@@ -6,6 +6,7 @@
     <title>Portfolio Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
@@ -54,10 +55,34 @@
     </nav>
     <div class="container">
       <section id="person">
-        <div class="person"><h1>Person Information</h1></div>
+        <div class="person">
+          <h1>
+            <a
+              href=""
+              class="typewrite"
+              data-period="2000"
+              data-type="[ &quot;Hello, Im Avinash Dhillor.&quot;, &quot;I am Full Stack developer.&quot; , &quot;I Love to create.&quot;, &quot; Checkout my Portfolio to know my work.&quot;  ]"
+            >
+              <span class="wrap"></span>
+            </a>
+          </h1>
+        </div>
       </section>
       <section id="projects">
-        <div class="projects"><h1>Project Information</h1></div>
+        <h1 id="projectHeader">Projects</h1>
+
+        <ul id="projectSkills">
+          <li>Skills :</li>
+          <li>Javascript</li>
+          <li>React/redux</li>
+          <li>html/css/sass</li>
+          <li>nodejs</li>
+          <li>git</li>
+          <li>socket.io</li>
+          <li>java</li>
+          <li>python</li>
+        </ul>
+        <div class="projects"></div>
       </section>
       <section id="certificates">
         <div class="certificates"><h1>Certificates Information</h1></div>
@@ -66,5 +91,6 @@
         <div class="contact"><h1>Contact Information</h1></div>
       </section>
     </div>
+    <script src="js/textanimation.js"></script>
   </body>
 </html>
