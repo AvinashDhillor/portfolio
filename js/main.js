@@ -151,8 +151,61 @@ const typewriterContent = data => {
 const userImage = data => {
   document.querySelector('#userImage').setAttribute('src', data);
 };
+
 const userAboutMe = data => {
   document.querySelector('#aboutme').textContent = data;
 };
-const userSkils = data => {};
-const userSocialMedia = data => {};
+
+const userSkils = data => {
+  let element = document.querySelector('#projectSkills');
+  let li = document.createElement('li');
+  li.textContent = 'Skills :';
+  element.appendChild(li);
+  for (let i = 0; i < data.length; i++) {
+    let li = document.createElement('li');
+    li.textContent = data[i];
+    element.appendChild(li);
+  }
+};
+const userSocialMedia = data => {
+  let userFacebook = document.querySelector('#userFacebook');
+  let userTwitter = document.querySelector('#userTwitter');
+  let userLinkedin = document.querySelector('#userLinkedin');
+  let userGithub = document.querySelector('#userGithub');
+
+  if (!!data.facebook) {
+    let ele = document.createElement('a');
+    ele.setAttribute('href', '#');
+    ele.setAttribute('class', 'fa fa-facebook-square');
+    userFacebook.appendChild(ele);
+  } else {
+    userFacebook.setAttribute('style', 'display: none;');
+  }
+
+  if (!!data.twitter) {
+    let ele = document.createElement('a');
+    ele.setAttribute('href', '#');
+    ele.setAttribute('class', 'fa fa-twitter-square');
+    userTwitter.appendChild(ele);
+  } else {
+    userTwitter.setAttribute('style', 'display:none');
+  }
+
+  if (!!data.linkedin) {
+    let ele = document.createElement('a');
+    ele.setAttribute('href', '#');
+    ele.setAttribute('class', 'fa fa-linkedin-square');
+    userLinkedin.appendChild(ele);
+  } else {
+    userLinkedin.setAttribute('style', 'display:none');
+  }
+
+  if (!!data.github) {
+    let ele = document.createElement('a');
+    ele.setAttribute('href', '#');
+    ele.setAttribute('class', 'fa fa-linkedin-square');
+    userGithub.appendChild(ele);
+  } else {
+    userGithub.setAttribute('style', 'display:none');
+  }
+};

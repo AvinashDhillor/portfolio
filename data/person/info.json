@@ -2,13 +2,20 @@
   "typeingContent": "Hello, Im Avinash Dhillor. I am full stack developer. I love to create things. Checkout my website to know my work.",
   "image": "./data/certificates/4.jpg",
   "aboutme": "Hello My name is avinash nsdh hwebdheb Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,Hello My name is avinash nsdh hwebdheb Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,Hello My name is avinash nsdh hwebdheb Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,",
-  "skills": "",
+  "skills": [
+    "Javascript",
+    "React/Redux",
+    "Webpack",
+    "HTML/CSS/SASS",
+    "nodejs",
+    "git",
+    "socket.io",
+    "java"
+  ],
   "social": {
-    "github": "",
-    "facebook": "",
-    "twitter": "",
-    "linkedin": "",
-    "phoneno": "",
-    "email": ""
+    "github": "#",
+    "facebook": "#12",
+    "twitter": "#",
+    "linkedin": "#"
   }
 }
