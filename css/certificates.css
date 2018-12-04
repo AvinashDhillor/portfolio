@@ -1,7 +1,6 @@
 #certificates {
   box-shadow: 0px 2px 5px black;
   z-index: 2;
-  min-height: 100vh;
 }
 
 .certificates {
@@ -9,6 +8,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+
   padding: 20px 0;
 }
 
@@ -25,4 +25,5 @@
 
 .certificates > img:hover {
   transform: rotate(0deg);
+  border: 1px solid rgb(51, 5, 5);
 }

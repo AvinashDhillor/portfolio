@@ -11,7 +11,16 @@
       type="text/css"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
 
@@ -47,7 +56,6 @@
       media="screen"
       href="css/contact.css"
     />
-    <script src="js/main.js"></script>
   </head>
   <body>
     <nav>
@@ -63,12 +71,7 @@
       <section id="person">
         <div class="person">
           <h1>
-            <a
-              href=""
-              class="typewrite"
-              data-period="2000"
-              data-type="[ &quot;Hello, Im Avinash Dhillor.&quot;, &quot;I am Full Stack developer.&quot; , &quot;I Love to create.&quot;, &quot; Checkout my Portfolio to know my work.&quot;  ]"
-            >
+            <a href="" class="typewrite" data-period="2000">
               <span class="wrap"></span>
             </a>
           </h1>
@@ -88,38 +91,49 @@
           <li>java</li>
           <li>python</li>
         </ul>
-        <div class="projects"></div>
+        <div id="scroll"><div class="projects"></div></div>
       </section>
       <section id="certificates">
         <h1 id="title" style="color: black;text-shadow: 1px 1px 2px black">
           Certificates
         </h1>
-        <div class="certificates">
-          <!--
-            <img src="./data/certificates/1.jpg" />
-            <img src="./data/certificates/2.jpg" />
-            <img src="./data/certificates/3.jpg" />
-            <img src="./data/certificates/4.jpg" />
-
-            <img src="./data/certificates/3.jpg" />
-            <img src="./data/certificates/4.jpg" />
-
-            <img src="./data/certificates/3.jpg" />
-            <img src="./data/certificates/3.jpg" />
-            <img src="./data/certificates/3.jpg" />
-            <img src="./data/certificates/3.jpg" />
-            <img src="./data/certificates/3.jpg" />
-            <img src="./data/certificates/3.jpg" />
-            <img src="./data/certificates/3.jpg" />
-            <img src="./data/certificates/3.jpg" />
-          -->
-        </div>
+        <div class="certificates"></div>
       </section>
       <section id="contact">
-        <div class="contact"><h1 id="title">Contact me</h1></div>
+        <div class="contact">
+          <h1 id="title">Contact me</h1>
+          <div class="flex-container">
+            <div class="picture">
+              <img id="userImage" />
+              <p>Avinash Dhillor</p>
+            </div>
+            <div class="about">
+              <h1>About me</h1>
+              <p id="aboutme"></p>
+
+              <h1>Social Media</h1>
+              <ul style="list-style:none">
+                <li><a href="#" class="fa fa-facebook-square"></a></li>
+                <li><a href="#" class="fa fa-twitter-square"></a></li>
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github-square"></a></li>
+              </ul>
+              <p class="emailphone">
+                <a href="#" class="extra fa fa-envelope-o"></a
+                >avinashdhillor24@gmail.com
+              </p>
+              <p class="emailphone">
+                <a href="#" class="extra fa fa-phone"></a>+99 999999999
+              </p>
+            </div>
+          </div>
+        </div>
+        <footer class="footerContainer">
+          <a class="copyright"> Copyright &copy; 2018 </a>
+          <a class="createdby"> Created by :- Avinash, Keren, Madhav </a>
+        </footer>
       </section>
     </div>
-    <script src="js/textanimation.js"></script>
-    <script src="js/certificates.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
