@@ -20,10 +20,25 @@ fetch('./data/certificates/certificates.json')
     console.log(e);
   });
 
+fetch('./data/person/info.json')
+  .then(res => {
+    return res.json();
+  })
+  .then(data => {
+    typewriterContent(data.typeingContent);
+    userImage(data.image);
+    userAboutMe(data.aboutme);
+    userSkils(data.skills);
+    userSocialMedia(data.social);
+  })
+  .catch(e => {
+    console.log(e);
+  });
+
 //Render Projects
 const renderProjects = daa => {
   let ProjectsData = daa;
-  let width = ProjectsData.length * 350;
+  let width = ProjectsData.length * 360;
   document
     .querySelector('.projects')
     .setAttribute('style', 'width:' + width + 'px;');
@@ -32,13 +47,18 @@ const renderProjects = daa => {
     let sectionelement = document.createElement('a');
     let imageelement = document.createElement('img');
     let pelement = document.createElement('p');
+    let spanElement = document.createElement('span');
     sectionelement.setAttribute('class', 'projectcardview');
     sectionelement.setAttribute('href', data.link);
     imageelement.setAttribute('style', 'width: 300px;height:200px;');
     imageelement.setAttribute('src', data.image);
     pelement.textContent = data.title;
+    spanElement.textContent = 'Build using :- ' + data.buildUsing;
+    spanElement.setAttribute('class', 'tooltip');
+    sectionelement.appendChild(spanElement);
     sectionelement.appendChild(imageelement);
     sectionelement.appendChild(pelement);
+
     document.querySelector('.projects').append(sectionelement);
   }
 };
@@ -56,7 +76,6 @@ const renderCertificates = data => {
     let imageElement = document.createElement('img');
     imageElement.setAttribute('src', certificatesData[i].path);
     let random = getRandomInt(-7, 7).toString();
-    console.log(random);
     imageElement.setAttribute('style', 'transform: rotate(' + random + 'deg);');
     document.querySelector('.certificates').appendChild(imageElement);
   }
@@ -121,21 +140,6 @@ window.onload = function() {
   css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #fff}';
   document.body.appendChild(css);
 };
-
-fetch('./data/person/info.json')
-  .then(res => {
-    return res.json();
-  })
-  .then(data => {
-    typewriterContent(data.typeingContent);
-    userImage(data.image);
-    userAboutMe(data.aboutme);
-    userSkils(data.skills);
-    userSocialMedia(data.social);
-  })
-  .catch(e => {
-    console.log(e);
-  });
 
 const typewriterContent = data => {
   let dataArray = data.split('.');
@@ -203,7 +207,7 @@ const userSocialMedia = data => {
   if (!!data.github) {
     let ele = document.createElement('a');
     ele.setAttribute('href', '#');
-    ele.setAttribute('class', 'fa fa-linkedin-square');
+    ele.setAttribute('class', 'fa fa-github-square');
     userGithub.appendChild(ele);
   } else {
     userGithub.setAttribute('style', 'display:none');
