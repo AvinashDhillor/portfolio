@@ -1,7 +1,28 @@
+#certificates {
+  box-shadow: 0px 2px 5px black;
+  z-index: 2;
+  min-height: 100vh;
+}
+
 .certificates {
-  height: 100vh;
-  border: 1px solid black;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
+  padding: 20px 0;
+}
+
+.certificates > img {
+  max-width: 250px;
+  max-height: 150px;
+  flex: 1 250px;
+  background-size: cover;
+  padding: 15px;
+  background: #eeeeee;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.certificates > img:hover {
+  transform: rotate(0deg);
 }

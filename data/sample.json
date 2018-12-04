@@ -1,0 +1,26 @@
+[
+  {
+    "image": "./data/images/1.gif",
+    "title": "Chat app",
+    "link": "http://www.facebook.com",
+    "build-using": "html, css and javascript"
+  },
+  {
+    "image": "./data/images/1.gif",
+    "title": "Calculator",
+    "link": "http://www.facebook.com",
+    "build-using": "html, css and javascript"
+  },
+  {
+    "image": "./data/images/1.gif",
+    "title": "Expensify App",
+    "link": "http://www.facebook.com",
+    "build-using": "html, css and javascript"
+  },
+  {
+    "image": "./data/images/1.gif",
+    "title": "Some title",
+    "link": "http://www.facebook.com",
+    "build-using": "html, css and javascript"
+  }
+]

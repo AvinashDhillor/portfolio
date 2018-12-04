@@ -5,7 +5,7 @@
   justify-content: center;
   background-image: linear-gradient(to right, #1a237e, #900c3f);
   box-shadow: 0 4px 7px black;
-  z-index: 2;
+  z-index: 5;
 }
 
 .header li {
