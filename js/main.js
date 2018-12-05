@@ -50,12 +50,16 @@ const renderProjects = daa => {
     let spanElement = document.createElement('span');
     sectionelement.setAttribute('class', 'projectcardview');
     sectionelement.setAttribute('href', data.link);
+    sectionelement.setAttribute('data-toggle', 'tooltip');
+    sectionelement.setAttribute('data-placement', 'auto');
+    sectionelement.setAttribute('title', data.buildUsing);
     imageelement.setAttribute('style', 'width: 300px;height:200px;');
     imageelement.setAttribute('src', data.image);
     pelement.textContent = data.title;
     spanElement.textContent = 'Build using :- ' + data.buildUsing;
     spanElement.setAttribute('class', 'tooltip');
     sectionelement.appendChild(spanElement);
+
     sectionelement.appendChild(imageelement);
     sectionelement.appendChild(pelement);
 
@@ -74,6 +78,7 @@ const renderCertificates = data => {
   let certificatesData = data;
   for (let i = 0; i < certificatesData.length; i++) {
     let imageElement = document.createElement('img');
+    imageElement.setAttribute('id', i + 'img');
     imageElement.setAttribute('src', certificatesData[i].path);
     let random = getRandomInt(-7, 7).toString();
     imageElement.setAttribute('style', 'transform: rotate(' + random + 'deg);');
