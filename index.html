@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Portfolio Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <link
       href="http://fonts.googleapis.com/css?family=Pacifico"
       rel="stylesheet"
@@ -58,7 +63,16 @@
     />
   </head>
   <body>
-    <nav>
+    <div id="menu">
+      <a
+        href="#"
+        ,
+        class="fa fa-bars"
+        style="font-size:18px;margin:0px;color:white"
+      ></a
+      >MENU
+    </div>
+    <nav class="cheader">
       <ul style="list-style: none" class="header">
         <li><a href="#person">About Me</a></li>
         <li><a href="./data/resume/sample.pdf">Resume</a></li>
@@ -87,15 +101,7 @@
         <h1 id="title" style="color: black;text-shadow: 1px 1px 2px black">
           Certificates
         </h1>
-        <div class="certificates">
-          <!--
-            <div id="myModal" class="modal">
-              <span class="close">&times;</span>
-              <img class="modal-content" id="img01" />
-              <div id="caption"></div>
-            </div>
-          -->
-        </div>
+        <div class="certificates"></div>
       </section>
       <section id="contact">
         <div class="contact">
