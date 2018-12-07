@@ -50,6 +50,7 @@ const renderProjects = daa => {
     let spanElement = document.createElement('span');
     sectionelement.setAttribute('class', 'projectcardview');
     sectionelement.setAttribute('href', data.link);
+    sectionelement.setAttribute('target', '_blank');
     imageelement.setAttribute('style', 'width: 300px;height:200px;');
     imageelement.setAttribute('src', data.image);
     pelement.textContent = data.title;
@@ -181,8 +182,9 @@ const userSocialMedia = data => {
 
   if (!!data.facebook) {
     let ele = document.createElement('a');
-    ele.setAttribute('href', '#');
+    ele.setAttribute('href', data.facebook);
     ele.setAttribute('class', 'fa fa-facebook-square');
+    ele.setAttribute('target', '_blank');
     userFacebook.appendChild(ele);
   } else {
     userFacebook.setAttribute('style', 'display: none;');
@@ -190,8 +192,9 @@ const userSocialMedia = data => {
 
   if (!!data.twitter) {
     let ele = document.createElement('a');
-    ele.setAttribute('href', '#');
+    ele.setAttribute('href', data.twitter);
     ele.setAttribute('class', 'fa fa-twitter-square');
+    ele.setAttribute('target', '_blank');
     userTwitter.appendChild(ele);
   } else {
     userTwitter.setAttribute('style', 'display:none');
@@ -199,8 +202,9 @@ const userSocialMedia = data => {
 
   if (!!data.linkedin) {
     let ele = document.createElement('a');
-    ele.setAttribute('href', '#');
+    ele.setAttribute('href', data.linkedin);
     ele.setAttribute('class', 'fa fa-linkedin-square');
+    ele.setAttribute('target', '_blank');
     userLinkedin.appendChild(ele);
   } else {
     userLinkedin.setAttribute('style', 'display:none');
@@ -208,8 +212,9 @@ const userSocialMedia = data => {
 
   if (!!data.github) {
     let ele = document.createElement('a');
-    ele.setAttribute('href', '#');
+    ele.setAttribute('href', data.github);
     ele.setAttribute('class', 'fa fa-github-square');
+    ele.setAttribute('target', '_blank');
     userGithub.appendChild(ele);
   } else {
     userGithub.setAttribute('style', 'display:none');
