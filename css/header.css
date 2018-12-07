@@ -9,6 +9,62 @@
   flex-wrap: wrap;
 }
 
+#menu {
+  position: absolute;
+  display: none;
+  background-image: linear-gradient(to right, #1a237e, #900c3f);
+  box-shadow: 0 4px 7px black;
+  z-index: 5;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 18px;
+  padding: 12px 0px;
+  text-shadow: 3px 3px 5px black;
+  border-bottom: 2px solid white;
+}
+
+@media screen and (max-width: 570px) {
+  #menu {
+    width: 100vw;
+    display: block;
+    text-align: center;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .close {
+    width: auto;
+    flex-direction: column;
+    align-content: center;
+    background-image: linear-gradient(to right, #1a237e, #900c3f);
+    box-shadow: 0 4px 7px black;
+    z-index: 5;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 18px;
+    padding: 48px 20px 12px 20px;
+    text-shadow: 3px 3px 5px black;
+    text-align: center;
+  }
+
+  .close li {
+    padding: 12px 0;
+  }
+
+  .close li a {
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px 12px 20px;
+    text-shadow: 3px 3px 5px black;
+  }
+
+  .close li a:hover {
+    background-color: #42a5f5;
+  }
+}
+
 .header li {
   padding: 12px 0;
 }

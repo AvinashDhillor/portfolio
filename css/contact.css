@@ -3,6 +3,13 @@
   background: rgb(51, 4, 4);
 }
 
+@media screen and (max-width: 954px) {
+  .contact {
+    height: auto;
+    background: rgb(51, 4, 4);
+  }
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +42,7 @@ div.picture {
 div.about {
   flex: 3;
   flex-basis: 500px;
-  height: 80vh;
+  height: auto;
 }
 
 .about h1 {
@@ -128,4 +135,17 @@ div.about {
 .footerContainer > .copyright {
   width: 180px;
   font-size: 12px;
+}
+
+@media screen and (max-width: 500px) {
+  .footerContainer {
+    justify-content: center;
+  }
+  .footerContainer > .createdby {
+    flex: 1 1 300px;
+    width: auto;
+  }
+  .footerContainer > .copyright {
+    width: auto;
+  }
 }

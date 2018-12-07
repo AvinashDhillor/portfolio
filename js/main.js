@@ -50,9 +50,6 @@ const renderProjects = daa => {
     let spanElement = document.createElement('span');
     sectionelement.setAttribute('class', 'projectcardview');
     sectionelement.setAttribute('href', data.link);
-    sectionelement.setAttribute('data-toggle', 'tooltip');
-    sectionelement.setAttribute('data-placement', 'auto');
-    sectionelement.setAttribute('title', data.buildUsing);
     imageelement.setAttribute('style', 'width: 300px;height:200px;');
     imageelement.setAttribute('src', data.image);
     pelement.textContent = data.title;
@@ -218,3 +215,9 @@ const userSocialMedia = data => {
     userGithub.setAttribute('style', 'display:none');
   }
 };
+
+$(() => {
+  $('#menu').on('click', () => {
+    $('.cheader ul').toggleClass('header close');
+  });
+});
