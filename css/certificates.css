@@ -8,13 +8,14 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+
   padding: 20px 0;
 }
 
 .certificates > img {
-  max-width: 360px;
-  max-height: 200px;
-  flex: 1;
+  max-width: 250px;
+  max-height: 150px;
+  flex: 1 250px;
   background-size: cover;
   padding: 15px;
   background: #eeeeee;
